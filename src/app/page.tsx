@@ -9,7 +9,7 @@ export default function Home() {
           <div>
             <h1 className="text-4xl font-bold">Flashcards</h1>
             <p className="mt-3 md:text-lg">
-              Flashcard application designed to help you study and learn more effectively.{""}
+              Flashcard application designed to help you study and learn more effectively.
             </p>
           </div>
 
