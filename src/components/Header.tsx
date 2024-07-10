@@ -19,7 +19,7 @@ const Header = () => {
             className="flex items-center gap-2 hover:opacity-60 custom-transition"
           >
             <Image
-              src="/assets/images/logo.svg"
+              src="/assets/images/pythonrangers-logo.png"
               alt="Personal logo"
               width={40}
               height={40}
