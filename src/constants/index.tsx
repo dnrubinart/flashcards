@@ -1,6 +1,6 @@
 export const navLinks = [
     { href: "/", key: "Home", text: "Home" },
-    { href: "/studysets", studySetId: "preparation", key: "preparation", text: "preparation" },
+    { href: "/studysets", studySetId: "Preparation", key: "Preparation", text: "Preparation" },
   ];
   
   type Item = {

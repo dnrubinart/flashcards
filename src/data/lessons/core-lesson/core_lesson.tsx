@@ -1,6 +1,6 @@
 const core_data = {
     lessonTitle: "Core Concepts",
-    slug: "core",
+    slug: "modules-core",
     units: [
       {
         title: "Core Concepts",

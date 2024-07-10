@@ -1,6 +1,6 @@
 const oop_data = {
     lessonTitle: "Object-Oriented Programming",
-    slug: "oop",
+    slug: "modules-oop",
     units: [
       {
         title: "Object-Oriented Programming",

@@ -33,7 +33,7 @@ const MobileSidebar = ({ toggleSidebar }: MobileSidebarProps) => {
       {/* Sidebar Menu */}
       <motion.div
         {...framerSidebarPanel}
-        className="fixed top-0 bottom-0 right-0 z-[60] w-full h-screen max-w-sm bg-zinc-900 border-l-2 border-violet-900"
+        className="fixed top-0 bottom-0 right-0 z-[60] w-full h-screen max-w-sm bg-zinc-900 border-l-2 border-green-900"
       >
         <div className="relative h-full flex flex-col p-4 max-sm:py-2 z-10">
           <div className="flex justify-between items-center mb-4">
