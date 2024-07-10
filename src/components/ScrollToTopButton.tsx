@@ -31,10 +31,10 @@ const ScrollToTopButton = () => {
       size="icon"
       className={`${
         !isVisible ? "hidden" : "sm:hidden"
-      } fixed z-[45] size-10 rounded-full bottom-2 right-2 border-2 border-green-900 bg-zinc-900/60 backdrop-blur hover:bg-zinc-800 custom-transition`}
+      } fixed z-[45] size-10 rounded-full bottom-2 right-2 border-2 border-emerald-900 bg-zinc-900/60 backdrop-blur hover:bg-zinc-800 custom-transition`}
       onClick={scrollToTop}
     >
-      <FaArrowUp className="size-5 text-green-400" />
+      <FaArrowUp className="size-5 text-emerald-400" />
     </Button>
   );
 };

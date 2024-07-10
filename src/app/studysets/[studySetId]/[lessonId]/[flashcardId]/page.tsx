@@ -18,13 +18,13 @@ export default function FlashcardPage({ params }: FlashcardPageProps) {
   const unit = lesson.units.filter((unit) => unit.slug === flashcardId)[0];
 
   return (
-    <div className="w-full rounded-lg bg-black border border-green-900 p-4 lg:p-6">
+    <div className="w-full rounded-lg bg-black border border-emerald-900 p-4 lg:p-6">
       <div className="mb-12 space-y-5">
         <div className="space-y-1.5">
           {/* Back link */}
           <Link
             href={`/studysets/${studySetId}`}
-            className="flex items-center gap-2 text-lg font-semibold text-green-400 hover:text-green-300 custom-transition"
+            className="flex items-center gap-2 text-lg font-semibold text-emerald-400 hover:text-emerald-300 custom-transition"
           >
             <FaArrowLeft /> Back
           </Link>

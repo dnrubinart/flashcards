@@ -136,7 +136,7 @@ const Flashcard = ({ cardData }: FlashcardProps) => {
       {/* Progress Bar */}
       <div className="bg-zinc-700 dark:bg-gray-700 h-2 w-full rounded-2xl">
         <div
-          className="h-full bg-green-500 rounded-2xl custom-transition"
+          className="h-full bg-emerald-500 rounded-2xl custom-transition"
           style={{ width: `${progress}%` }}
         />
       </div>
