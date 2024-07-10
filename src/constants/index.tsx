@@ -1,6 +1,7 @@
 export const navLinks = [
     { href: "/", key: "Home", text: "Home" },
     { href: "/studysets", studySetId: "preparation", key: "Preparation", text: "Preparation" },
+    { href: "/studysets", studySetId: "shuffled", key: "Shuffled", text: "Shuffled" },
   ];
   
   type Item = {
@@ -18,6 +19,11 @@ export const navLinks = [
           slug: "studysets/preparation",
           description: "description",
         },
+        {
+          name: "Shuffled",
+          slug: "studysets/shuffled",
+          description: "description",
+        },
       ],
-    },
+    }
   ];  
