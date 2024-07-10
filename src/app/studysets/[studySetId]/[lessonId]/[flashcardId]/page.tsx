@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { FaArrowLeft } from 'react-icons/fa';
-import Flashcard from '../../../../../components/Flashcard';
-import { lessonData } from '../../../../../data/lessons/index';
+import Link from "next/link";
+import { FaArrowLeft } from "react-icons/fa";
+import Flashcard from "../../../../../components/Flashcard";
+import { lessonData } from "../../../../../data/lessons/index";
 
 interface FlashcardPageProps {
   params: {
