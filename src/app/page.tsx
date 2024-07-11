@@ -9,13 +9,16 @@ export default function Home() {
           <div>
             <h1 className="text-4xl font-bold">Flashcards</h1>
             <p className="mt-3 md:text-lg">
-              Flashcard application designed to help you study and learn more effectively.
+              An application designed to effectively assist the buddy group in
+              preparing for the upcoming progress reviews.
             </p>
           </div>
 
           {StudySets.map((section) => (
             <section key={section.name} className="space-y-5">
-              <h2 className="font-semibold uppercase tracking-wider text-neutral-400">{section.name}</h2>
+              <h2 className="font-semibold uppercase tracking-wider text-neutral-400">
+                {section.name}
+              </h2>
 
               <div className="grid grid-cols-1 gap-5 lg:grid-cols-2">
                 {section.items.map((item) => (
@@ -24,10 +27,14 @@ export default function Home() {
                     key={item.name}
                     className="block space-y-1.5 rounded-lg bg-zinc-900 px-5 py-3 hover:bg-zinc-800 custom-transition"
                   >
-                    <h3 className="text-lg sm:text-xl font-bold">{item.name}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold">
+                      {item.name}
+                    </h3>
 
                     {item.description && (
-                      <p className="line-clamp-3 text-neutral-400 font-semibold">{item.description}</p>
+                      <p className="line-clamp-3 text-neutral-400 font-semibold">
+                        {item.description}
+                      </p>
                     )}
                   </Link>
                 ))}

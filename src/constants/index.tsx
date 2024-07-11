@@ -16,7 +16,7 @@ export const navLinks = [
         {
           name: "Preparation",
           slug: "studysets/preparation",
-          description: "description",
+          description: "Study set including flashcards on various modules of the course.",
         }
       ],
     },
