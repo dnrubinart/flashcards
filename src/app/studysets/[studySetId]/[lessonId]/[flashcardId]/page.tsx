@@ -28,9 +28,13 @@ export default function FlashcardPage({ params }: FlashcardPageProps) {
   const unit = lesson.units.filter((unit) => unit.slug === flashcardId)[0];
 
   const [cardData, setCardData] = useState(unit.items);
+  const [shuffleCount, setShuffleCount] = useState(0);
 
   const handleShuffle = () => {
-    setCardData(shuffle([...cardData]));
+    const shuffledData = shuffle([...cardData]);
+    setCardData([]);
+    setCardData(shuffledData);
+    setShuffleCount(shuffleCount + 1);
   };
 
   return (
@@ -55,7 +59,7 @@ export default function FlashcardPage({ params }: FlashcardPageProps) {
             <FaRandom className="text-emerald-400" />
             <span className="ml-2">Shuffle</span>
           </button>
-          <Flashcard cardData={cardData} />
+          <Flashcard key={shuffleCount} cardData={cardData} />
         </div>
       </div>
     </div>
