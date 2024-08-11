@@ -50,7 +50,11 @@ const MobileSidebar = ({ toggleSidebar }: MobileSidebarProps) => {
             {navLinks.map((link) => (
               <Link
                 key={link.key}
-                href={link.studySetId ? `${link.href}/${link.studySetId}` : link.href}
+                href={
+                  link.studySetId
+                    ? `${link.href}/${link.studySetId}`
+                    : link.href
+                }
                 className="py-2 px-3 rounded-lg border border-zinc-700 hover:bg-zinc-700 transition duration-300 ease-in-out"
                 onClick={toggleSidebar}
               >

@@ -92,7 +92,11 @@ const Flashcard = ({ cardData }: FlashcardProps) => {
           className="flip-card-inner w-[100%] h-[100%] cursor-pointer"
           initial={false}
           animate={{ rotateX: isFlipped ? 180 : 360 }}
-          transition={{ duration: 0.1, type: "tween", animationDirection: "normal" }}
+          transition={{
+            duration: 0.1,
+            type: "tween",
+            animationDirection: "normal",
+          }}
           onAnimationComplete={() => setIsAnimating(false)}
         >
           <div className="flip-card-front w-[100%] h-[100%] bg-zinc-800 rounded-lg p-4 flex justify-center items-center">

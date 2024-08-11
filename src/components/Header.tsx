@@ -45,10 +45,7 @@ const Header = () => {
         </nav>
       </header>
 
-      <AnimatePresence
-        mode="wait"
-        initial={false}
-      >
+      <AnimatePresence mode="wait" initial={false}>
         {open && <MobileSidebar toggleSidebar={toggleSidebar} />}
       </AnimatePresence>
     </>

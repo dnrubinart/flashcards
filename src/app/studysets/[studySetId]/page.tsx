@@ -22,11 +22,15 @@ export default function StudySet({ params }: StudySetProps) {
           >
             <FaArrowLeft /> Back
           </Link>
-          <h1 className="text-2xl sm:text-4xl font-bold">{studySet?.name ?? ""}</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold">
+            {studySet?.name ?? ""}
+          </h1>
         </div>
 
         <div className="space-y-5">
-          <h2 className="font-semibold uppercase tracking-wider text-neutral-400">Navigation</h2>
+          <h2 className="font-semibold uppercase tracking-wider text-neutral-400">
+            Navigation
+          </h2>
           <ul className="space-y-2">
             {studySet?.data?.map((lesson) => (
               <li key={lesson.slug}>
@@ -42,7 +46,9 @@ export default function StudySet({ params }: StudySetProps) {
         </div>
 
         <div className="space-y-5">
-          <h2 className="font-semibold uppercase tracking-wider text-neutral-400">Modules</h2>
+          <h2 className="font-semibold uppercase tracking-wider text-neutral-400">
+            Modules
+          </h2>
           <section className="space-y-10">
             {studySet?.data?.map((lesson) => (
               <div
@@ -51,8 +57,7 @@ export default function StudySet({ params }: StudySetProps) {
                 className="space-y-5 scroll-mt-20"
               >
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold">
-                  </h3>
+                  <h3 className="text-xl sm:text-2xl font-bold"></h3>
                 </div>
 
                 <div className="grid grid-cols-1 gap-2 sm:gap-5 lg:grid-cols-2">
@@ -62,8 +67,12 @@ export default function StudySet({ params }: StudySetProps) {
                       href={`/studysets/${studySet.slug}/${lesson.slug}/${unit.slug}`}
                       className="block space-y-1.5 rounded-lg bg-zinc-900 px-5 py-3 hover:bg-zinc-800 custom-transition"
                     >
-                      <h4 className="text-lg sm:text-xl font-bold">{unit.title}</h4>
-                      <p className="line-clamp-3 text-neutral-400 font-semibold">{unit.items.length} Questions</p>
+                      <h4 className="text-lg sm:text-xl font-bold">
+                        {unit.title}
+                      </h4>
+                      <p className="line-clamp-3 text-neutral-400 font-semibold">
+                        {unit.items.length} Questions
+                      </p>
                     </Link>
                   ))}
                 </div>

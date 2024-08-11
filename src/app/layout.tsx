@@ -7,7 +7,8 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export const metadata: Metadata = {
   title: "Flashcards",
-  description: "An application designed to effectively assist the buddy group in preparing for the upcoming progress reviews.",
+  description:
+    "An application designed to effectively assist the buddy group in preparing for the upcoming progress reviews.",
 };
 
 export default function RootLayout({
